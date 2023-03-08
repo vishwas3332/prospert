@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href='mystyles.css'>
+    <title>Financial Website</title>
+</head>
+<body>
+    <header>
+        <div class="logo">Prospert</div>
+        <div class="topper">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <nav class="nav-bar">
+            <ul>
+                <li>
+                    <a href="" class="active">HOME</a>
+                </li>
+                <li>
+                    <a href="">STOCKS</a>
+                </li>
+                <li>
+                    <a href="">NEWS</a>
+                </li>
+                <li>
+                    <a href="">BLOG</a>
+                </li>
+                <li>
+                    <a href="">COMMUNITY</a>
+                </li>
+                <li>
+                    <form action="" method="get">
+                      <input type="text" placeholder="Search...">
+                      <button type="submit">SEARCH</button>
+                    </form>
+                </li>                  
+            </ul>
+        </nav>
+    </header>
+    <script>
+        topper=document.querySelector(".topper");
+        topper.onclick=function(){
+            navbar=document.querySelector(".nav-bar");
+            navbar.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>

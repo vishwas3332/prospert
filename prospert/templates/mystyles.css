@@ -1,0 +1,147 @@
+*{
+    margin: 0;
+    padding: 0%;
+    list-style: none;
+    text-decoration: none;
+    font-family: "Google Sans Regular";
+    box-sizing: border-box;
+}
+body{
+    background: #fefefe;
+}
+header{
+    width: 100%;
+    height: 80px;
+    background: linear-gradient(to right,#222223,#5f767e);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 100px;
+}
+.logo{
+    font-size: 28px;
+    font-weight: bold;
+    color: #fefefe;
+}
+.topper{
+    display: none;
+}
+.nav-bar ul{
+    display:flex;
+}
+.nav-bar ul li a{
+    display: block;
+    color: #fefefe;
+    font-size: 20px;
+    padding: 10px 25px;
+    border-radius: 30px;
+    transition: .2s;
+    margin: 0 5px;
+}
+.nav-bar ul li a:hover{
+    color: #11101b;
+    background: #fefefe;
+}
+.nav-bar ul li a.active{
+    color: #11101b;
+    background: #fefefe;
+}
+@media only screen and (max-width :1320px){
+    header{
+        padding: 0 50px;
+    }
+}
+@media only screen and (max-width: 1100px){
+    header{
+        padding: 0 30px;
+    }
+}
+@media only screen and (max-width: 900px){
+    .topper{
+        display: block;
+        cursor: pointer;
+    }
+    .topper .line{
+        width: 30px;
+        height: 3px;
+        background: #fefefe;
+        margin: 6px 0;
+    }
+    .nav-bar{
+        position: absolute;
+        top: 80px;
+        left: 0;
+        right: 0;
+        width: 100vw;
+        background: linear-gradient(to right,#222223,#5f767e);
+        transition: .5s;
+        overflow: hidden;
+    }
+    .nav-bar ul{
+        display: block;
+        width: fit-content;
+        margin: 80px auto 0 auto;
+        text-align: center;
+        transition: .5s;
+        opacity: 0;
+    }
+    .nav-bar.active ul{
+        opacity: 1;
+    }
+    .nav-bar ul li a{
+        margin-bottom: 12px;
+    }
+}
+/* search form */
+nav form {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+  }
+  
+  nav input[type="text"] {
+    width: 200px;
+    padding: 10px 25px;
+    font-size: 16px;
+    border: none;
+    border-radius: 10px;
+  }
+  
+  nav button[type="submit"] {
+    padding: 10px 25px;
+    font-size: 16px;
+    background-color: transparent;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  /*search form on smaller screens */
+  @media (max-width: 768px) {
+    nav form {
+      margin-left: 0;
+      margin-top: 10px;
+    }
+    
+    nav input[type="text"] {
+      width: 100%;
+      border-radius: 10px;
+    }
+    
+    nav button[type="submit"] {
+      width: 100%;
+      border-radius: 10px;
+    }
+  }
+  /* hover and active effects */
+nav button[type="submit"]:hover,
+nav button[type="submit"]:active {
+  background-color: #fff;
+  color: #000000;
+  border: 2px solid #000000;
+}
+
+nav input[type="text"]:hover,
+nav input[type="text"]:active {
+  border: 2px solid #000000;
+}  
