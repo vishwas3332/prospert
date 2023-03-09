@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href='mystyles.css'>
+    {% load static %}
+    <link rel="stylesheet" href='{% static "mystyles.css" %}'>
     <title>Financial Website</title>
 </head>
 <body>
@@ -18,24 +19,24 @@
         <nav class="nav-bar">
             <ul>
                 <li>
-                    <a href="" class="active">HOME</a>
+                    <a href="{% url 'HomePage' %}" class="active">Home</a>
                 </li>
                 <li>
-                    <a href="">STOCKS</a>
+                    <a href="{% url 'StockPage' %}">Stocks</a>
                 </li>
                 <li>
-                    <a href="">NEWS</a>
+                    <a href="{% url 'AssistPage' %}">Assist</a>
                 </li>
                 <li>
-                    <a href="">BLOG</a>
+                    <a href="{% url 'FeedPage' %}">Feed</a>
                 </li>
                 <li>
-                    <a href="">COMMUNITY</a>
+                    <a href="{% url 'CommunityPage' %}">Community</a>
                 </li>
                 <li>
                     <form action="" method="get">
                       <input type="text" placeholder="Search...">
-                      <button type="submit">SEARCH</button>
+                      <button type="submit">Search</button>
                     </form>
                 </li>                  
             </ul>

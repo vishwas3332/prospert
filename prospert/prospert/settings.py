@@ -38,6 +38,10 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'base.apps.BaseConfig',
+    'community.apps.CommunityConfig',
+    'Stocks.apps.StocksConfig',
+    'assist.apps.AssistConfig',
+    'feed.apps.FeedConfig',
 ]
 
 MIDDLEWARE = [
@@ -124,3 +128,7 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+STATICFILES_DIRS = [
+    BASE_DIR / 'static',
+]
