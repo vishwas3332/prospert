@@ -35,6 +35,10 @@ header{
     font-size: 20px;
     border-radius: 5px;
     padding: 10px 25px;
+<<<<<<< HEAD
+=======
+    border-radius: 10px;
+>>>>>>> 9e21e53bf65ff395751d7ce16a5dfa53af1da777
     transition: .2s;
     margin: 0 5px;
 }
