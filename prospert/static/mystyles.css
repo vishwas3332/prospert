@@ -35,10 +35,7 @@ header{
     font-size: 20px;
     border-radius: 5px;
     padding: 10px 25px;
-<<<<<<< HEAD
-=======
     border-radius: 10px;
->>>>>>> 9e21e53bf65ff395751d7ce16a5dfa53af1da777
     transition: .2s;
     margin: 0 5px;
 }
@@ -114,7 +111,7 @@ nav form {
   nav button[type="submit"] {
     padding: 10px 25px;
     font-size: 16px;
-    background-color: transparent;
+    background-color:  #5dbea3 ;
     color: #fff;
     border: none;
     border-radius: 5px;
@@ -140,8 +137,8 @@ nav form {
   /* hover and active effects */
 nav button[type="submit"]:hover,
 nav button[type="submit"]:active {
-  background-color: #fff;
-  color: #000000;
+/*  background-color: #fff;*/
+/*  color: #000000;*/
   border: 2px solid #000000;
 }
 

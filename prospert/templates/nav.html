@@ -5,11 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     {% load static %}
-<<<<<<< HEAD
     <link rel="stylesheet" href='{% static "mystyles.css" %}'>
-=======
-    <link rel="stylesheet" href={% static 'mystyles.css' %}>
->>>>>>> 9e21e53bf65ff395751d7ce16a5dfa53af1da777
     <title>Financial Website</title>
 </head>
 <body>
@@ -23,7 +19,7 @@
         <nav class="nav-bar">
             <ul>
                 <li>
-                    <a href="{% url 'HomePage' %}" class="active">Home</a>
+                    <a href="{% url 'HomePage' %}">Home</a>
                 </li>
                 <li>
                     <a href="{% url 'StockPage' %}">Stocks</a>
@@ -40,7 +36,7 @@
                 <li>
                     <form action="" method="get">
                       <input type="text" placeholder="Search...">
-                      <button type="submit">Search</button>
+                      <button type="submit" >Search</button>
                     </form>
                 </li>                  
             </ul>
