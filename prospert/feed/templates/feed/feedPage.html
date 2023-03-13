@@ -1,35 +1,25 @@
 {% extends 'main.html' %}
-<<!DOCTYPE html>
-<html>
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Feed</title>
-	{% load static %}
-	<link rel="stylesheet" type="text/css" href="{% static 'feed/feedstyle.css' %}">
-</head>
-<body>
-	{% block content %}
-	<div class='total-body'>
-		<div class='left-body-part'>
-			<h2>browse</h2>
-		</div>
-		<div class='right-body-part'>
-			{% for article in articles %}
-			<div class='article'>
-				<div class='article-photo'>
-					<img src="{{ article.urlToImage }}" >
-				</div>
-				<div class='article-content'>
-					<h2>{{ article.title }}</h2>
-					<p>{{ article.description }}</p>
-					<a href='{{ article.url }}' target='_blank'>Read more</a>
-				</div>
+{% load static %}
+{% block content %}
+<link rel="stylesheet" type="text/css" href="{% static 'feedstyle.css' %}">
+<div class='total-body'>
+	<div class='left-body-part'>
+		{% for article in articles %}
+		<br>
+		<div class='article'>
+			<div class='article-photo'>
+				<img src="{{ article.urlToImage }}" >
 			</div>
-			{% endfor %}
+			<div class='article-content'>
+				<h2>{{ article.title }}</h2>
+				<p>{{ article.description }}</p>
+				<a href='{{ article.url }}' target='_blank'>Read more</a>
+			</div>
 		</div>
+		{% endfor %}
 	</div>
-	{% endblock content %}
-</body>
-</html>
+	<div class='right-body-part'>
+	</div>
+</div>
+{% endblock content %}
 
